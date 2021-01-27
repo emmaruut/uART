@@ -1,5 +1,9 @@
 /* CSS files add styling rules to your content */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
@@ -9,3 +13,115 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+
+h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+nav.desktop {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4CAF50;
+  padding: 40px 20px;
+  margin: 0 0;
+}
+
+nav.mobile {
+  display: none;
+}
+
+nav.mobile .nav-links{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 40px;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+nav.desktop .nav-links a {
+  margin: 0 10px;
+}
+
+nav.mobile .nav-links a {
+  margin: 10px 0;
+}
+
+nav.mobile .nav-links.hidden {
+  opacity: 0;
+  transform: translateX(-20px);
+  pointer-events: none;
+}
+
+.close-menu{
+  align-self: flex-end;
+}
+
+header {
+  display: flex;
+  margin: 60px auto;
+  max-width: 1000px;
+  
+}
+
+header .left {
+  width: 100%;
+  
+}
+
+header .right{
+  width: 100%;
+  min-height: 250px;
+  background: #bbb;
+
+}
+
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.feature-card {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 150px;
+  height: 150px;
+  background: #bbb;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 10px;
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+}
+
+@media (max-width: 600px){
+  nav.desktop{
+    display:none;
+  }
+  nav.mobile{
+    display:block;
+  }
+  
+}
+
