@@ -4,10 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Roboto Slab', serif;
-  margin: 2em;
-}
 
 h1 {
   font-style: italic;
@@ -63,8 +59,7 @@ nav.mobile .nav-links.hidden {
 
 header {
   display: flex;
-  margin: 60px auto;
-  max-width: 1000px;
+ 
   
 }
 
@@ -75,7 +70,7 @@ header .left {
 
 header .right{
   width: 100%;
-  min-height: 250px;
+  min-height: 400px;
   background: #bbb;
 
 }
