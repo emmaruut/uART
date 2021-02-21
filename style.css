@@ -76,7 +76,8 @@ header .right{
 }
 
 footer{
-  background:
+  background: #929499;
+  min-height: 50px;
 }
 
 
