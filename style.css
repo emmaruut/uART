@@ -64,14 +64,14 @@ header {
 }
 
 header .left {
-  width: 
+  
   
 }
 
 header .right{
-  width: 100%;
+
   min-height: 400px;
-  background: #bbb;
+  display: flex;
 
 }
 
